@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2019-2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+sh_binary {
+    name: "init.radio.sh",
+    src: "init.radio.sh",
+    soc_specific: true,
+}
