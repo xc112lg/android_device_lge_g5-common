@@ -42,7 +42,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25241321472
 
 # SELinux policies
-BOARD_SEPOLICY_DIRS += $(DEVICE_COMMON_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_COMMON_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
 include vendor/lge/g5-common/BoardConfigVendor.mk
