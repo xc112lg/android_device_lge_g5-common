@@ -44,6 +44,7 @@ BOARD_SUPER_PARTITION_METADATA_DEVICE := system
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 ifneq ($(filter h830,$(TARGET_DEVICE)),)
+BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := true
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 BOARD_CACHEIMAGE_PARTITION_SIZE := 1291845632
