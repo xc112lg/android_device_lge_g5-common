@@ -81,5 +81,5 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8996.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8996.conf
 
-$(call soong_config_set,livedisplay_sdm,enable_dm,false)
-$(call soong_config_set,livedisplay_sdm,enable_pa,false)
+$(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
+#$(call soong_config_set_bool,livedisplay_sdm,enable_pa,false)
